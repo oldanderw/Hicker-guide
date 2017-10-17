@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Contact</title>
+  <meta charset="UTF-8">
+    <script type="text/javascript" src="js/content.js"></script>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+ </head>
+   <body>
+    <header>
+     <a class="Logo" href="/"><img  src="images/hikersGuide.png" alt="Hikers guide"></a>
+     <nav>
+       <ul>
+         <li><a href="/">home</a></li>
+         <li><a href="Destinations.html">destinations</a></li>
+         <li><a href="Events.html">events</a></li>
+         <li><a class="current" href="/connect.html">connect</a></li>
+         <li><a href="/login">login</a></li>
+       </ul>
+     </nav>
+
+   </header>
+    <section id="connect">
+      <h1>Contact Form</h1>
+      <form method="post">
+          <fieldset>
+            <!-- <label for="Fname">First name:</label> -->
+            <input type="text" name="Fname" id="Fname" placeholder="Full name" required>
+            <label for="Fname" class="error"></label>
+          </fieldset>
+          <fieldset>
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" name="email" id="email" placeholder="Email" required>
+          </fieldset> 
+          <fieldset>
+            <!-- <label for="tel">phone number</label> -->
+            <input type="tel" id="tel" pattern="^\d{4}-\d{3}-\d{4}$" name="phone number" placeholder="phone number">
+          </fieldset>
+          <fieldset>
+            <!-- <p>what is your reason</p> -->
+            <input list="reason" name="reason" placeholder="Reason If other then type what your reason is">
+            <datalist id="reason">
+              <option  value="bug report" ></option>
+              <option value="suggestion"></option>
+              <option value="question"></option>
+              <option value="other"></option>
+            </datalist>
+          </fieldset>
+          <fieldset>
+            <textarea required id="feedback" name="feedback" placeholder="feedback"></textarea>
+            <label for="feedback" class="error"></label>
+        </fieldset>
+          <input type="submit" value="submit">
+      </form>
+    </section>
+   <footer>
+      <p id="copyright"></p>
+      <ul class="social">
+        <li><a href="http://www.facebook.com">Facebook</a></li>
+        <li><a href="http://www.twitter.com">Twitter</a></li>
+        <li><a href="http://www.youtube.com">YouTube</a></li>
+        <li><a href="http://www.plus.google.com">Google Plus</a></li>
+        <li><a href="http://www.instagram.com">Instagram</a></li>
+      </ul>
+   </footer>
+ </body>
+</html>
